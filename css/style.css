@@ -969,4 +969,13 @@ color:#ad3c60 ; */
     height: 300px;
 }
 
-
+/*  uso de pseudo elemento */
+.tarjeta::before{
+    position: absolute;
+    content:'';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, .3);
+}
