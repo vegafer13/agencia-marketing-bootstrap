@@ -1,0 +1,22 @@
+{
+  "name": "agencia-marketing-jesusvega-bootstrap",
+  "version": "1.0.0",
+  "description": "Proyecto Agencia de Marketing digital - Jesus Vega",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vegafer13/agencia-marketing-bootstrap.git"
+  },
+  "author": "JesusVega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vegafer13/agencia-marketing-bootstrap/issues"
+  },
+  "homepage": "https://github.com/vegafer13/agencia-marketing-bootstrap#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
