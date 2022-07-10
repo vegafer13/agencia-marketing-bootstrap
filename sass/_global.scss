@@ -27,11 +27,11 @@ a{
 }
 
 .shadow-1{
-    box-shadow: 10px 10px 0px 2px #646FD4;
+    box-shadow: 10px 10px 0px 2px $color1;
 }
 
 .shadow-2{
-    box-shadow: 0px 0px 20px 0px #646FD4;
+    box-shadow: 0px 0px 20px 0px $color1;
 }
 
 /* servicios card index*/
@@ -43,18 +43,3 @@ a{
         transform: translateY(-20px);
     }
 }
-
-/*  uso de pseudo elemento */
-.tarjeta{
-
-    &::before{
-        position: absolute;
-        content:'';
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, .5);
-    }
-}
-

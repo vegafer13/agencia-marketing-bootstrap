@@ -33,16 +33,6 @@ a {
   .move:hover {
     transform: translateY(-20px); }
 
-/*  uso de pseudo elemento */
-.tarjeta::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-
 /* animacion menu bootstrap */
 .menu__logo {
   margin: 10px 10px;
@@ -154,3 +144,13 @@ a {
         transform: translateY(-10px); }
     .select__selectbox-bold {
       font-weight: 1000; }
+
+/*  uso de pseudo elemento */
+.tarjeta::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
