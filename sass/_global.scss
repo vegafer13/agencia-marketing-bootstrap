@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: $txWhite;
+    font-family: 'Montserrat-Regular',Arial,Helvetica,sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: $txWhite;
+}
+
+
+
+/* estilos para acompañar bootstrap */
+.bg-gradient1{
+    background-image: linear-gradient(225deg, #7a7cc7 0, #24459b 50%, #001871 100%);
+}
+
+.bg-gradient2{
+    background-image: linear-gradient(225deg, #d57578 0, #cc6673 16.67%, #be536a 33.33%, #ad3b5f 50%, #9b1f55 66.67%, #8b0050 83.33%, #7e004e 100%);
+}
+
+.shadow-1{
+    box-shadow: 10px 10px 0px 2px #646FD4;
+}
+
+.shadow-2{
+    box-shadow: 0px 0px 20px 0px #646FD4;
+}
+
+/* servicios card index*/
+.move{
+    transition: 0.3s;
+    min-height: 100%;
+
+    &:hover{
+        transform: translateY(-20px);
+    }
+}
+
+/*  uso de pseudo elemento */
+.tarjeta{
+
+    &::before{
+        position: absolute;
+        content:'';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+
