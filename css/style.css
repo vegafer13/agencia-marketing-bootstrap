@@ -38,6 +38,10 @@ a {
   margin: 10px 10px;
   max-width: 100%; }
 
+.navbar-brand:hover::after {
+  content: ' 🏠 Inicio';
+  font-size: small; }
+
 .navbar-nav a {
   transition: 0.3s; }
   .navbar-nav a:hover {
@@ -64,6 +68,8 @@ a {
     color: white; }
     .button__contact-a:hover {
       color: #646FD4; }
+      .button__contact-a:hover::before {
+        content: '📧 '; }
 
 .button__whatsapp {
   border-radius: 10px;
@@ -81,6 +87,27 @@ a {
     color: white; }
     .button__whatsapp-aw:hover {
       color: #0bc20b; }
+      .button__whatsapp-aw:hover::before {
+        content: '💬 '; }
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 0px 5px #646FD4;
+  z-index: 100; }
+  .float:hover {
+    background-color: white;
+    color: #ad3c60; }
+  .float__icon {
+    margin-top: 16px; }
 
 /* Animaciones botones index */
 /*  estilos Formulario */
@@ -142,6 +169,8 @@ a {
         background-color: #242F9B;
         border-color: white;
         transform: translateY(-10px); }
+        .select__selectbox button:hover::before {
+          content: '✔ '; }
     .select__selectbox-bold {
       font-weight: 1000; }
 

@@ -2,6 +2,14 @@
 .menu__logo{
     margin: 10px 10px;
     max-width: 100%;
+
+}
+
+.navbar-brand{
+    &:hover::after{
+        content: ' 🏠 Inicio';
+        font-size: small;
+    }
 }
 
 .navbar-nav{
@@ -40,6 +48,10 @@
 
         &:hover{
             color: #646FD4;
+
+            &::before{
+                content: '📧 ';
+            }
         }
     }
 }
@@ -65,7 +77,36 @@
 
         &:hover{
             color: rgb(11, 194, 11);
+
+            &::before{
+                content: '💬 ';
+            }
         }
+    }
+}
+
+// boton de whatsapp
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 0px 0px 5px $color1;
+    z-index:100;
+
+    &:hover{
+        background-color: white;
+        color: #ad3c60;
+    }
+
+    &__icon{
+        margin-top:16px;
     }
 }
 
