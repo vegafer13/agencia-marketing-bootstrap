@@ -146,11 +146,10 @@ a {
       font-weight: 1000; }
 
 /*  uso de pseudo elemento */
-.tarjeta::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+.tarjeta:not(:hover) {
+  filter: grayscale(100%);
+  opacity: 1; }
+
+.logo:not(:hover) {
+  filter: grayscale(100%);
+  opacity: 0.5; }
