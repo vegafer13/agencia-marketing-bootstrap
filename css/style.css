@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* color de textos */
+/* color de botones */
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +52,6 @@ a {
     transform: translateY(-2px); }
 
 .button__contact {
-  margin: 0px 10px 10px 0px;
   border-radius: 10px;
   background-color: transparent;
   box-shadow: 5px 5px 0px 1px white;
@@ -59,11 +59,12 @@ a {
   border-color: white;
   padding: 10px;
   border-width: 1px;
-  transition: .3s; }
+  transition: 0.3s; }
   .button__contact:hover {
     background-color: white;
-    border-color: #646FD4;
     transform: translateY(-10px); }
+  .button__contact:hover {
+    border-color: #646FD4; }
   .button__contact-a {
     color: white; }
     .button__contact-a:hover {
@@ -73,13 +74,13 @@ a {
 
 .button__whatsapp {
   border-radius: 10px;
-  box-shadow: 5px 5px 0px 1px #0bc20b;
   background-color: green;
+  box-shadow: 5px 5px 0px 1px #0bc20b;
   border: solid;
   border-color: #0bc20b;
   padding: 10px;
   border-width: 1px;
-  transition: .3s; }
+  transition: 0.3s; }
   .button__whatsapp:hover {
     background-color: white;
     transform: translateY(-10px); }
@@ -163,7 +164,7 @@ a {
       border: solid;
       border-color: #646FD4;
       padding: 10px 40px;
-      transition: .3s; }
+      transition: 0.3s; }
       .select__selectbox button:hover {
         color: white;
         background-color: #242F9B;

@@ -14,7 +14,7 @@
 
 .navbar-nav{
     a{
-    transition: 0.3s;
+    transition: $transicion;
 
         &:hover{
             border-bottom: solid;
@@ -26,28 +26,34 @@
 }
 
 // Botones de jumbotron
-.button__contact{
-    margin: 0px 10px 10px 0px;
+@mixin btn-base($colorBtn, $colorShadow, $colorBorder) {
     border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 5px 5px 0px 1px white;
+    background-color:$colorBtn;
+    box-shadow: 5px 5px 0px 1px $colorShadow;
     border: solid;
-    border-color: white;
+    border-color: $colorBorder;
     padding:10px;
     border-width: 1px;
-    transition: .3s;
+    transition: $transicion;
 
     &:hover{
-        background-color: white;
-        border-color: #646FD4;
+        background-color:$bg-btn-1;
         transform: translateY(-10px);
+    }
+}
+
+.button__contact{
+    @include btn-base(transparent, white, white);
+
+    &:hover{
+        border-color: $color1;
     }
 
     &-a{
         color: white;
 
         &:hover{
-            color: #646FD4;
+            color: $color1;
 
             &::before{
                 content: '📧 ';
@@ -58,25 +64,13 @@
 
 
 .button__whatsapp{
-    border-radius: 10px;
-    box-shadow: 5px 5px 0px 1px rgb(11, 194, 11);
-    background-color:green;
-    border: solid;
-    border-color: rgb(11, 194, 11);
-    padding:10px;
-    border-width: 1px;
-    transition: .3s;
-
-    &:hover{
-        background-color:white;
-        transform: translateY(-10px);
-    }
+    @include btn-base($bg-btn-ws, $border-Ws, $border-Ws);
 
     &-aw{
-        color: white;
+        color: $txWhite;
 
         &:hover{
-            color: rgb(11, 194, 11);
+            color: $textWs;
 
             &::before{
                 content: '💬 ';

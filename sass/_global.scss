@@ -36,7 +36,7 @@ a{
 
 /* servicios card index*/
 .move{
-    transition: 0.3s;
+    transition: $transicion;
     min-height: 100%;
 
     &:hover{
