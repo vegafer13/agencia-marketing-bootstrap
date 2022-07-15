@@ -1,5 +1,15 @@
 /*  uso de pseudo elemento */
-.tarjeta{
+.filtros-base {
+
+    &:not(:hover){
+        filter: grayscale(100%);
+        opacity: 1;
+    }
+}
+
+
+.tarjeta {
+    @extend .filtros-base;
 
     //  &::before{
     //      position: absolute;
@@ -10,18 +20,10 @@
     //      right: 0;
     //      background-color: rgba(0, 0, 0, .5);
     // }
-
-    &:not(:hover){
-        filter: grayscale(100%);
-        opacity: 1;
-    }
+    
 }
 
 
-.logo{
-    
-    &:not(:hover){
-    filter: grayscale(100%);
-    opacity: 0.5;
-    }
+.filter-logo{
+    @extend .filtros-base;
 }

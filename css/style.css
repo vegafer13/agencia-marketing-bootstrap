@@ -176,10 +176,6 @@ a {
       font-weight: 1000; }
 
 /*  uso de pseudo elemento */
-.tarjeta:not(:hover) {
+.filtros-base:not(:hover), .tarjeta:not(:hover), .filter-logo:not(:hover) {
   filter: grayscale(100%);
   opacity: 1; }
-
-.logo:not(:hover) {
-  filter: grayscale(100%);
-  opacity: 0.5; }
