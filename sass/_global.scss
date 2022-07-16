@@ -43,3 +43,23 @@ a{
         transform: translateY(-20px);
     }
 }
+
+// bucle each
+$redesSociales: (
+    facebook: #3b5998,
+    twitter: #55acee,
+    youtube: #bb0000,
+    instagram: #ff0084,
+    ws: $bg-btn-ws,
+    mail: $color1,
+);
+
+@each $nombre, $color in $redesSociales {
+    .hover-#{$nombre} {
+        :hover{
+            color: $color;
+            transform: scale(1.5);
+            transition: 0.2s;
+        }
+    }
+}

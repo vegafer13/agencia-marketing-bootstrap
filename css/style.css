@@ -34,6 +34,36 @@ a {
   .move:hover {
     transform: translateY(-20px); }
 
+.hover-facebook :hover {
+  color: #3b5998;
+  transform: scale(1.5);
+  transition: 0.2s; }
+
+.hover-twitter :hover {
+  color: #55acee;
+  transform: scale(1.5);
+  transition: 0.2s; }
+
+.hover-youtube :hover {
+  color: #bb0000;
+  transform: scale(1.5);
+  transition: 0.2s; }
+
+.hover-instagram :hover {
+  color: #ff0084;
+  transform: scale(1.5);
+  transition: 0.2s; }
+
+.hover-ws :hover {
+  color: green;
+  transform: scale(1.5);
+  transition: 0.2s; }
+
+.hover-mail :hover {
+  color: #646FD4;
+  transform: scale(1.5);
+  transition: 0.2s; }
+
 /* animacion menu bootstrap */
 .menu__logo {
   margin: 10px 10px;
@@ -110,7 +140,6 @@ a {
   .float__icon {
     margin-top: 16px; }
 
-/* Animaciones botones index */
 /*  estilos Formulario */
 .contact__form {
   border: solid;
