@@ -6,6 +6,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 0px 10px 3px #646FD4; }
+
 body {
   color: white;
   font-family: 'Montserrat-Regular',Arial,Helvetica,sans-serif; }
@@ -66,7 +72,7 @@ a {
 
 /* animacion menu bootstrap */
 .menu__logo {
-  margin: 10px 10px;
+  margin: 0px 10px;
   max-width: 100%; }
 
 .navbar-brand:hover::after {
